@@ -8,11 +8,7 @@ export default function Kanban() {
     const [taskInput, setTaskInput] = useState('')
     const [tasks, setTasks] = useState([
         {
-          name: "1",
-          stage: 0,
-        },
-        {
-          name: "2",
+          name: "Test",
           stage: 0,
         },
       ])
