@@ -1,0 +1,117 @@
+.Kanban {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.kanban-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.Kanban .task-input {
+    box-shadow: inset 0 1px 4px rgb(0 0 0 / 10%), 0 0 0 transparent;
+    border: 0;
+    border-radius: 0;
+    background-color: #f3f7f7;
+    color: #0e141e;
+    height: 36px;
+    outline: none;
+    font-size: 14px;
+    padding: 0 12px;
+    border-bottom: 2px solid transparent;
+}
+
+.Kanban .task-input-button {
+    outline: none;
+    padding: 0 1.528em;
+    min-height: 44px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 8px 12px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: var(--font-family-sans-serif);
+    border-radius: 2px;
+    color: #ffffff;
+    background: #1ba94c;
+}
+
+.Kanban .task-input-button:disabled {
+    background-color: #ccf7db;
+    cursor: default;
+}
+
+.Kanban .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 50px auto;
+
+}
+
+.kanban-card {
+    background-color: #ffffff;
+    padding: 1em;
+    min-width: 236px;
+    min-height: 350px;
+    border: 1px solid rgb(241, 241, 241);
+    margin-inline: 10px;
+    overflow-y: scroll;
+}
+
+.kanban-card-items-container {
+    padding-left: 0;
+}
+
+.kanban-card-item {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f7f7;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.kanban-card-heading {
+    width: 100%;
+    text-align: center;
+}
+
+.Kanban .card-item-heading {
+    margin-left: 20px;
+}
+
+.kanban-card-item-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.kanban-card-item-icons svg {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+
+}
+
+#delete-icon {
+    width: 35px;
+    height: 35px;
+}
+
+#arrow-left-icon {
+    margin-right: 5px;
+}
