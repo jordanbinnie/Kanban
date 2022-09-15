@@ -13,7 +13,7 @@ export default function Kanban() {
         },
       ])
     
-      const stageNames = ["First stage", "Second stage", "Third stage", "Fourth stage"]
+      const stageNames = ["Backlog", "To Do", "Ongoing", "Done"]
 
 
       const tasksWithStages = stageNames.map((stage, index) => {
@@ -31,7 +31,7 @@ export default function Kanban() {
 
     
       function removeTask(task) {
-        const newTasks = tasks.filter((t) => t.name != task.name && t.stage != task.stage) 
+        const newTasks = tasks.filter((t) => t.name != task.name) 
         setTasks(newTasks)
       }
     

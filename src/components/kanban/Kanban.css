@@ -88,10 +88,12 @@
 .kanban-card-heading {
     width: 100%;
     text-align: center;
+    color: #3a424e;
 }
 
 .Kanban .card-item-heading {
     margin-left: 20px;
+    color: #3a424e;
 }
 
 .kanban-card-item-icons {
@@ -104,6 +106,7 @@
     height: 25px;
     width: 25px;
     cursor: pointer;
+    fill: #3a424e;
 
 }
 
